@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tres en Raya V2 — Tecnologies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="x">X</span>·<span class="o">O</span>&nbsp;Tres en Raya V2</div>
+    <p class="brand-sub">Javier Gisbert · 2 DAW</p>
+    <nav class="nav">
+      <a href="index.html">Visió general</a>
+      <a href="tecnologies.html" class="active">Tecnologies</a>
+      <a href="tutorial.html">Com jugar</a>
+      <a href="captures.html">Captures</a>
+      <a href="joc/index.html" class="play">▶ Jugar ara</a>
+    </nav>
+  </aside>
+  <main class="main"><div class="content">
+
+    <h1>Tecnologies utilitzades</h1>
+    <p class="lead">Tot amb tecnologies web natives, sense frameworks ni cap pas de compilació.</p>
+    <div class="grid">
+      <div class="card"><h3>HTML</h3><p>Estructura del tauler (una taula 3×3 de botons), el marcador i el missatge de guanyador.</p></div>
+      <div class="card"><h3>CSS</h3><p>Tema fosc amb accent turquesa, tauler amb transicions i estats hover/disabled. Layout centrat amb flexbox.</p></div>
+      <div class="card"><h3>JavaScript</h3><p>Tota la lògica del joc en un únic fitxer main.js, sense llibreries externes.</p></div>
+    </div>
+
+    <h2>Com està organitzat el codi</h2>
+    <p>El projecte són tres fitxers plans: <code>index.html</code>, <code>index.css</code> i <code>main.js</code>. El tauler és una <code>&lt;table&gt;</code> amb un <code>onclick</code> únic que delega en la funció <code>Jugar()</code>, en compte de posar un listener a cada botó.</p>
+
+    <h2>Lògica del joc (main.js)</h2>
+    <p>L'estat del tauler es guarda en un array de 9 posicions. Les funcions principals són:</p>
+    <div class="grid">
+      <div class="card"><h3>Jugar() / Jugador()</h3><p>Gestionen el clic del jugador i distingeixen entre col·locar (fase 1) i moure amb dos clics —fitxa origen i casella destí— (fase 2).</p></div>
+      <div class="card"><h3>Maquina()</h3><p>Tria la jugada de la O de manera aleatòria entre les caselles o fitxes disponibles.</p></div>
+      <div class="card"><h3>Ganador()</h3><p>Comprova les 8 combinacions guanyadores i actualitza el marcador.</p></div>
+      <div class="card"><h3>Reiniciar()</h3><p>Neteja el tauler i les jugades, però conserva el marcador de victòries.</p></div>
+    </div>
+    <p>La màquina juga de forma aleatòria, sense estratègia: no fa servir cap algorisme tipus minimax, així que se li pot guanyar amb facilitat.</p>
+    <footer>Tres en Raya V2 · Javier Gisbert Talboom · IES L'Estació · 2 DAW</footer>
+  </div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tres en Raya V2 — Com jugar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="x">X</span>·<span class="o">O</span>&nbsp;Tres en Raya V2</div>
+    <p class="brand-sub">Javier Gisbert · 2 DAW</p>
+    <nav class="nav">
+      <a href="index.html">Visió general</a>
+      <a href="tecnologies.html">Tecnologies</a>
+      <a href="tutorial.html" class="active">Com jugar</a>
+      <a href="captures.html">Captures</a>
+      <a href="joc/index.html" class="play">▶ Jugar ara</a>
+    </nav>
+  </aside>
+  <main class="main"><div class="content">
+
+    <h1>Com jugar</h1>
+    <p class="lead">Tu ets la X; la màquina, la O. Alinea tres fitxes teues per guanyar.</p>
+    <a class="cta" href="joc/index.html">▶ Obrir el joc</a>
+
+    <h2>Passos de la partida</h2>
+    <ol class="steps">
+      <li><strong>Fase de col·locació</strong>Fes clic en una casella buida per posar la teua X. La màquina respondrà amb una O. Cadascú col·loca 3 fitxes.</li>
+      <li><strong>Fase de moviment</strong>Quan tots dos teniu 3 fitxes, ja no se'n col·loquen més. Fes clic en una de les teues X per seleccionar-la i després en una casella buida per moure-la. La màquina mourà una de les seues a l'atzar.</li>
+      <li><strong>Guanyar</strong>Alinea les teues tres X en fila, columna o diagonal. En guanyar o perdre, el tauler es bloqueja i el marcador s'actualitza.</li>
+      <li><strong>Reiniciar</strong>El botó Reiniciar buida el tauler per a una nova partida, mantenint el marcador acumulat.</li>
+    </ol>
+
+    <h2>Executar-lo en local</h2>
+    <p>No cal instal·lar res ni compilar: és HTML, CSS i JavaScript purs.</p>
+    <pre><code>git clone https://github.com/Yonderus/Tres-en-Raya-V2-.git
+cd Tres-en-Raya-V2-</code></pre>
+    <p>Després, obri <code>index.html</code> al navegador (doble clic) o, dins VS Code, fes servir l'extensió <em>Live Server</em> per recarregar automàticament a cada canvi.</p>
+    <footer>Tres en Raya V2 · Javier Gisbert Talboom · IES L'Estació · 2 DAW</footer>
+  </div></main>
+</div>
+</body>
+</html>

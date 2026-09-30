@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tres en Raya V2 — Visió general</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="x">X</span>·<span class="o">O</span>&nbsp;Tres en Raya V2</div>
+    <p class="brand-sub">Javier Gisbert · 2 DAW</p>
+    <nav class="nav">
+      <a href="index.html" class="active">Visió general</a>
+      <a href="tecnologies.html">Tecnologies</a>
+      <a href="tutorial.html">Com jugar</a>
+      <a href="captures.html">Captures</a>
+      <a href="joc/index.html" class="play">▶ Jugar ara</a>
+    </nav>
+  </aside>
+  <main class="main"><div class="content">
+
+    <h1>Tres en Raya V2</h1>
+    <p class="lead">El clàssic tres en ratlla contra la màquina, jugat al navegador. La segona versió afig una variant de moviment de fitxes que allarga la partida més enllà de la col·locació inicial.</p>
+    <a class="cta" href="joc/index.html">▶ Jugar ara</a>
+    <div style="margin:1.2rem 0">
+      <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript (vanilla)</span><span class="tag">Sense dependències</span>
+    </div>
+
+    <h2>Què és</h2>
+    <p>Un tres en ratlla d'un jugador contra la màquina. El jugador és la <strong>X</strong> i la màquina, la <strong>O</strong>. L'objectiu de sempre: alinear tres fitxes pròpies en fila, columna o diagonal. A la part superior hi ha un marcador de partides guanyades i perdudes que es manté entre partides.</p>
+
+    <h2>La novetat de la V2: dues fases</h2>
+    <p>A diferència d'un tres en ratlla normal, ací no es col·loquen fitxes fins a omplir el tauler:</p>
+    <div class="grid">
+      <div class="card"><h3>Fase 1 — Col·locació</h3><p>Cada bàndol col·loca només 3 fitxes, alternant torns com en el joc clàssic.</p></div>
+      <div class="card"><h3>Fase 2 — Moviment</h3><p>Amb les 3 fitxes ja posades, es passa a moure-les per les caselles buides fins que algú fa línia.</p></div>
+    </div>
+    <p>Com cada bàndol té 3 fitxes i sempre queden 3 caselles lliures, durant la fase de moviment la partida no acaba en taules: continua fins que algú guanya.</p>
+
+    <h2>Repositori</h2>
+    <p>Codi font a <a href="https://github.com/Yonderus/Tres-en-Raya-V2-">github.com/Yonderus/Tres-en-Raya-V2-</a></p>
+    <footer>Tres en Raya V2 · Javier Gisbert Talboom · IES L'Estació · 2 DAW</footer>
+  </div></main>
+</div>
+</body>
+</html>
