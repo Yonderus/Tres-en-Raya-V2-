@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0f0f1a;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #e0e0e0;
+    gap: 24px;
+}
+
+/* Marcador */
+#resultado {
+    display: flex;
+    gap: 32px;
+    background: #1a1a2e;
+    padding: 16px 32px;
+    border-radius: 12px;
+    border: 1px solid #2a2a4a;
+}
+
+#resultado p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+#winJugador span {
+    color: #4ecdc4;
+}
+
+#draw span {
+    color: #f0c040;
+}
+
+#winMaquina span {
+    color: #ff6b6b;
+}
+
+/* Tablero */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px;
+}
+
+button {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Botones del tablero */
+#tablaPrincipal button {
+    width: 110px;
+    height: 110px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: #1a1a2e;
+    color: #4ecdc4;
+    border: 2px solid #2a2a4a;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+#tablaPrincipal button:hover {
+    background: #22223a;
+    transform: scale(1.04);
+    box-shadow: 0 0 16px rgba(78, 205, 196, 0.15);
+}
+
+#tablaPrincipal button:active {
+    transform: scale(0.96);
+}
+
+#tablaPrincipal button:disabled {
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Reiniciar */
+#reiniciar {
+    padding: 12px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    color: #4ecdc4;
+    border: 2px solid #4ecdc4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.5px;
+}
+
+#reiniciar:hover {
+    background: #4ecdc4;
+    color: #0f0f1a;
+}
+
+/* Mensaje ganador */
+#mensajeGanador {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s, transform 0.3s;
+    background: #1a1a2e;
+    border: 1px solid #2a2a4a;
+}
+
+#mensajeGanador.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

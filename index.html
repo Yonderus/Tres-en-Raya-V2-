@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="resultado">
+
+    <strong><p id="winJugador">Total de juegos ganados: <span id="winCountPlayer">0</span></p></strong>
+    <strong><p id="draw">Total de juegos empatados: <span id="drawCount">0</span></p></strong>
+    <strong><p id="winMaquina">Total de juegos perdidos: <span id="winCountMachine">0</span></p></strong>
+    </div>
+    <table id="tablaPrincipal" onclick="Jugar(event)">
+            <tr>
+                <td><button id="1"></button></td>
+                <td><button id="2"></button></td>
+                <td><button id="3"></button></td>
+            </tr>
+            <tr>
+                <td><button id="4"></button></td>
+                <td><button id="5"></button></td>
+                <td><button id="6"></button></td>
+            </tr>
+            <tr>
+                <td><button id="7"></button></td>
+                <td><button id="8"></button></td>
+                <td><button id="9"></button></td>
+            </tr>
+    </table>
+
+    <button id="reiniciar" onclick="Reiniciar()">Reiniciar</button>
+    <div id="mensajeGanador"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
