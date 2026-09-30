@@ -1,2 +1,0 @@
-Posa ací les captures de pantalla del projecte (captura1.png, captura2.png, ...)
-i referencia-les des de captures.html.
